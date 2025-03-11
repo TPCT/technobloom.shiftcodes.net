@@ -65,7 +65,7 @@
 
 <div class="space60"></div>
 
-@if($companies_slider && count($companies_slider->$slides))
+@if($companies_slider && count($companies_slider->slides))
     <div class="slider-section-area slider-inner sp5">
         <div class="container">
             <div class="row align-items-center">
