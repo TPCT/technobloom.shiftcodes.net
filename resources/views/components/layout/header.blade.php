@@ -50,7 +50,10 @@
         <div class="col-12">
             <div class="mobile-header-elements">
                 <div class="mobile-logo">
-                    <a href="{{route('site.index')}}"><img src="/images/logo1.png" alt="" /></a>
+                    <a href="{{route('site.index')}}">
+                        <x-curator-glider
+                                :media="app(\App\Settings\Site::class)->translate('logo')"
+                        />
                 </div>
                 <div class="mobile-nav-icon dots-menu">
                     <i class="fa-solid fa-bars"></i>
@@ -63,7 +66,9 @@
 <div class="mobile-sidebar mobile-sidebar1">
     <div class="logosicon-area">
         <div class="logos">
-            <img src="/images/logo1.png" alt="" />
+            <x-curator-glider
+                    :media="app(\App\Settings\Site::class)->translate('logo')"
+            />
         </div>
         <div class="menu-close">
             <i class="fa-solid fa-xmark"></i>
