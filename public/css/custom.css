@@ -1,0 +1,38 @@
+.contact-auhtor-box .content {
+  padding-inline: 10px;
+}
+.case-inner-box .link-area {
+  display: flex;
+}
+
+.case-inner-box .link-area a {
+  padding-inline: 5px;
+}
+
+.error-404 {
+  min-height: 100vh;
+}
+
+.owl-carousel .owl-item img {
+  max-height: 200px;
+}
+
+.service2-section-area .images-content-area .img1 {
+  height: 100%;
+}
+.page-header {
+  margin-top: 6rem;
+}
+.share-header-icons-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block: 1rem;
+}
+.share-header-icons-container i {
+  font-size: 26px;
+  color: var(--second-color);
+}
+
+
+

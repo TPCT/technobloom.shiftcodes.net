@@ -1,0 +1,101 @@
+/* Start Navbar */
+.arabic-version .btn-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.arabic-version .header-btn1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* End Navbar */
+/* Start Hero Section */
+.arabic-version .elements1 {
+  left: 0;
+}
+
+/* Start End Section */
+/* Start Contact  */
+.contact1-section-area .contact-auhtor-box .icons {
+  margin: 0 0 0 24px;
+}
+/* End Contact  */
+/* Start Works Inner */
+.arabic-version
+  .works-inner-section-area
+  .works-header-area
+  .works-content-box
+  .content {
+  padding-right: 80px;
+}
+/* End Works Inner */
+/* Start History Inner  */
+.arabic-version .history-inner-section-area .history-content-area {
+  padding: 0 50px 0 0;
+}
+/* End History Inner  */
+/* Start Heading */
+.arabic-version .heading2 h5::after {
+  right: 0;
+}
+/* End Heading */
+/* Start Princing Inner */
+.arabic-version
+  .pricing-inner-section-area
+  .pricing-boxarea
+  .list-area
+  ul
+  li
+  .check2,
+.arabic-version
+  .pricing-inner-section-area
+  .pricing-boxarea
+  .list-area
+  ul
+  li
+  .check3 {
+  margin: 0 0 0 8px;
+}
+.arabic-version .works-inner-section-area .header-btn1,
+.arabic-version .pricing-inner-section-area .header-btn1 {
+  width: fit-content;
+  margin: auto;
+}
+/* End Princing Inner */
+/* Star Case Lista */
+.arabic-version .case-lista-area .case-list ul li img {
+  margin: 0 0 0 8px;
+}
+/* End Case Lista */
+/* Start Works Inner */
+.arabic-version .works-inner-section-area .about-all-images-area .elements12 {
+  right: 43%;
+}
+.arabic-version .works-inner-section-area .about-all-images-area .elements13 {
+  right: 50%;
+}
+/* End Works Inner */
+/* Start Contact Main */
+.arabic-version
+  .contact-main-inner-area
+  .contact-header
+  .number-address-area
+  .phone-number
+  .content {
+  margin: 0 16px 0 0px;
+}
+/* End Contact Main */
+/* Start Footer */
+.arabic-version .footer1-section-area .footer-logo-area2 ul li a img {
+  margin: 0 0 0 8px;
+}
+.arabic-version
+  .contact-main-inner-area
+  .contact-header
+  .number-address-area
+  .phone-number {
+  margin: 0 0 0 40px;
+}
+/* End Footer */
