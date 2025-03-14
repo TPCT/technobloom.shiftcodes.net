@@ -70,13 +70,13 @@
                                         @foreach($projects as $project)
                                             <div class="col-lg-4">
                                                 <div class="case-inner-box">
-                                                    <div
-                                                            class="date d-flex align-items-center justify-content-center rounded-3 gap-2 position-absolute"
-                                                    >
-                                                        <i class="fa-solid fa-calendar-days"></i>
-                                                        {{$project->publishedAt()}}
-                                                    </div>
-                                                    <div class="img1 image-anime">
+                                                    <div class="img1 image-anime position-relative">
+                                                        <div
+                                                                class="date d-flex align-items-center justify-content-center rounded-3 gap-2 position-absolute"
+                                                        >
+                                                            <i class="fa-solid fa-calendar-days"></i>
+                                                            {{$project->publishedAt()}}
+                                                        </div>
                                                         <x-curator-glider
                                                             :media="$project->image_id"
                                                         />
