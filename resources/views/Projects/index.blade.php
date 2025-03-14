@@ -81,16 +81,11 @@
                                                             :media="$project->image_id"
                                                         />
                                                     </div>
-                                                    <div class="d-flex justify-content-center">
-                                                        {{$project->title}}
-                                                    </div>
                                                     <div class="content-area">
                                                         <div class="link-area">
-                                                            @foreach($project->categories as $category)
-                                                                <a href="{{route('projects.show', ['project' => $project])}}" class="tags"
-                                                                >#{{$category->title}}</a
-                                                                >
-                                                            @endforeach
+                                                            <a href="{{route('projects.show', ['project' => $project])}}" class="tags"
+                                                            >{{$project->title}}</a
+                                                            >
                                                         </div>
                                                         <div class="arrow">
                                                             <a href="{{route('projects.show', ['project' => $project])}}"
