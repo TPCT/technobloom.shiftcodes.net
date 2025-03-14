@@ -81,6 +81,9 @@
                                                             :media="$project->image_id"
                                                         />
                                                     </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        {{$project->title}}
+                                                    </div>
                                                     <div class="content-area">
                                                         <div class="link-area">
                                                             @foreach($project->categories as $category)
