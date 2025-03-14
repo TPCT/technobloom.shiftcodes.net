@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'site.Our Projects')
+@section('title', __('site.Our Projects'))
 
 @section('content')
     <div class="case-inner-section-area sp1">
