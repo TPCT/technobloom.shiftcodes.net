@@ -87,11 +87,6 @@
                                                             >{{$project->title}}</a
                                                             >
                                                         </div>
-                                                        <div class="arrow">
-                                                            <a href="{{route('projects.show', ['project' => $project])}}"
-                                                            ><i class="fa-solid fa-arrow-right"></i
-                                                                ></a>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
