@@ -34,5 +34,7 @@
   color: var(--second-color);
 }
 
-
-
+.service2-section-area .images-content-area,
+.contact1-section-area .contact-info-area {
+  height: 100%;
+}
