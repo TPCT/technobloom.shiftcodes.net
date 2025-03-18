@@ -42,3 +42,8 @@
 .case-inner-section-area .tabs-content-area .tab-content .tabs-contents .case-inner-box .img1{
   height: 200px;
 }
+
+.team-inner-section-area .team-boxarea .img1 img{
+    height: 300px;
+    object-fit: contain;
+}
