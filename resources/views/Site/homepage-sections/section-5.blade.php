@@ -26,7 +26,7 @@
                             <a
                                     href="{{$feature->link}}"
                                     class="cs_case_study_thumb cs_bg_filed"
-                                    style="background-image: url('{{\Awcodes\Curator\Models\Media::find($feature->image_id)->url}}')"
+                                    style="background-image: url('{{\Awcodes\Curator\Models\Media::find($feature->image_id)?->url}}')"
                             ></a>
                             <div class="content-area1">
                                 <a href="{{$feature->link}}"
