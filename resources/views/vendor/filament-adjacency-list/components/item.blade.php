@@ -14,16 +14,15 @@
         
         $hitDepthLimit = $maxDepth && substr_count($itemStatePath, $childrenKey) >= $maxDepth;
 
-
         $mountArgs = [
-            'id' => $item['id'],
             'statePath' => $itemStatePath,
             'cachedRecordKey' => $uuid,
+            'id' => $item['id']
         ];
     @endphp
 
     <div
-        class="flex justify-between w-full bg-white border border-gray-300 rounded-lg fi-adjacency-list-item dark:bg-gray-900 dark:border-white/10 group my-2">
+        class="flex justify-between w-full bg-white border border-gray-300 rounded-lg fi-adjacency-list-item dark:bg-gray-900 dark:border-white/10 group">
         <div class="flex flex-1">
             @if ($reorderable)
                 <div
@@ -53,16 +52,12 @@
                 @if ($editable)
                 wire:click="mountFormComponentAction(@js($statePath), 'edit', @js($mountArgs))"
                 @endif>
-                @if(is_array($item[$labelKey]))
-                    <span>{{ $item[$labelKey][app()->getLocale()] ?: __("Untitled Item") }}</span>
-                @else
-                    <span>{{ $item[$labelKey] ?: __("Untitled Item") }}</span>
-                @endif
+                <span>{{ $item[$labelKey] }}</span>
             </button>
         </div>
 
         <div class="items-center flex-shrink-0 hidden px-2 space-x-2 rtl:space-x-reverse group-hover:flex">
-            @if ($addable && !$hitDepthLimit && $maxDepth > 0)
+            @if ($addable && !$hitDepthLimit)
                 {{ $addChildAction($mountArgs) }}
             @endif
             @if ($dedentable)
@@ -74,7 +69,7 @@
             @if ($descendable)
                 {{ $moveDownAction($mountArgs) }}
             @endif
-            @if ($indentable && !$hitDepthLimit && $maxDepth > 0)
+            @if ($indentable && !$hitDepthLimit)
                 {{ $indentAction($mountArgs) }}
             @endif
             @if ($deletable)
@@ -89,6 +84,7 @@
         x-collapse
         @class([
             'fi-adjacency-list-items ms-5',
+            'pb-1' => !$hasChildren,
             'border-l border-l-gray-100 dark:border-l-white/10 ps-5 pt-2' => $hasRulers,
         ])
         x-data="adjacencyList({

@@ -12,15 +12,15 @@
     @php
         $treeId = $getId();
         
-        $hasRulers = $hasRulers();
-        $isAddable = $isAddable();
-        $isCollapsible = $isCollapsible();
-        $isCollapsed = $isCollapsed();
+        $hasRulers = true;
+        $isAddable = true;
+        $isCollapsible = true;
+        $isCollapsed = false;
         $isDeletable = $isDeletable();
         $isDisabled = $isDisabled();
         $isEditable = $isEditable();
-        $isIndentable = $isIndentable();
-        $isMoveable = $isMoveable();
+        $isIndentable = false;
+        $isMoveable = false;
         $isReorderable = $isReorderable();
         
         $maxDepth = $getMaxDepth();
