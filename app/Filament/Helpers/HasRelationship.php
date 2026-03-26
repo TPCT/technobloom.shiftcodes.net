@@ -14,7 +14,6 @@ use Saade\FilamentAdjacencyList\Forms\Components\Actions\AddAction;
 use Saade\FilamentAdjacencyList\Forms\Components\Actions\AddChildAction;
 use Saade\FilamentAdjacencyList\Forms\Components\Actions\DeleteAction;
 use Saade\FilamentAdjacencyList\Forms\Components\Actions\EditAction;
-use Saade\FilamentAdjacencyList\Forms\Components\Component;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
 trait HasRelationship
@@ -100,7 +99,7 @@ trait HasRelationship
         });
 
         $this->addAction(function (AddAction $action): void {
-            $action->using(function (Component $component, array $data): void {
+            $action->using(function ($component, array $data): void {
                 $relationship = $component->getRelationship();
                 $model = $component->getRelatedModel();
                 $pivotData = $component->getPivotAttributes() ?? [];
@@ -142,7 +141,7 @@ trait HasRelationship
         });
 
         $this->addChildAction(function (AddChildAction $action): void {
-            $action->using(function (Component $component, ?Model $parentRecord, array $data, array $arguments): void {
+            $action->using(function ($component, ?Model $parentRecord, array $data, array $arguments): void {
                 $relationship = $component->getRelationship();
                 $parentRecord = $parentRecord ?? $relationship->getModel()::find($arguments['id']);
 
@@ -198,7 +197,7 @@ trait HasRelationship
         });
 
         $this->editAction(function (EditAction $action): void {
-            $action->using(function (Component $component, ?Model $record, array $data, $arguments): void {
+            $action->using(function ($component, ?Model $record, array $data, $arguments): void {
                 $relationship = $component->getRelationship();
                 $record = $record ?? $relationship->getModel()::find($arguments['id']);
 
@@ -232,7 +231,7 @@ trait HasRelationship
         });
 
         $this->deleteAction(function (DeleteAction $action): void {
-            $action->using(function (Component $component, ?Model $record, $arguments): void {
+            $action->using(function ($component, ?Model $record, $arguments): void {
                 $relationship = $component->getRelationship();
                 $record = $record ?? $relationship->getModel()::find($arguments['id']);
 
