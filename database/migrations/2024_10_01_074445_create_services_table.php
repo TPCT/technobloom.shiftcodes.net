@@ -24,7 +24,7 @@ return new class extends Migration
 
         Schema::create('services_lang', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('parent_id')->index()->references('id')->on('projects')->cascadeOnDelete();
+            $table->foreignId('parent_id')->index()->references('id')->on('services')->cascadeOnDelete();
             $table->string('language', 10)->index()->nullable(false);
             $table->string('title')->nullable(false);
             $table->string('second_title')->nullable();
