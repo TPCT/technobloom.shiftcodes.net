@@ -10,6 +10,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Arr;
 use Saade\FilamentAdjacencyList\Forms\Components\Actions\Action;
+use Saade\FilamentAdjacencyList\Forms\Components\Actions\AddAction;
+use Saade\FilamentAdjacencyList\Forms\Components\Actions\AddChildAction;
+use Saade\FilamentAdjacencyList\Forms\Components\Actions\DeleteAction;
+use Saade\FilamentAdjacencyList\Forms\Components\Actions\EditAction;
 use Saade\FilamentAdjacencyList\Forms\Components\Component;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
@@ -95,7 +99,7 @@ trait HasRelationship
             $component->fillFromRelationship();
         });
 
-        $this->addAction(function (Action $action): void {
+        $this->addAction(function (AddAction $action): void {
             $action->using(function (Component $component, array $data): void {
                 $relationship = $component->getRelationship();
                 $model = $component->getRelatedModel();
@@ -137,7 +141,7 @@ trait HasRelationship
             });
         });
 
-        $this->addChildAction(function (Action $action): void {
+        $this->addChildAction(function (AddChildAction $action): void {
             $action->using(function (Component $component, ?Model $parentRecord, array $data, array $arguments): void {
                 $relationship = $component->getRelationship();
                 $parentRecord = $parentRecord ?? $relationship->getModel()::find($arguments['id']);
@@ -193,7 +197,7 @@ trait HasRelationship
             });
         });
 
-        $this->editAction(function (Action $action): void {
+        $this->editAction(function (EditAction $action): void {
             $action->using(function (Component $component, ?Model $record, array $data, $arguments): void {
                 $relationship = $component->getRelationship();
                 $record = $record ?? $relationship->getModel()::find($arguments['id']);
@@ -227,7 +231,7 @@ trait HasRelationship
             });
         });
 
-        $this->deleteAction(function (Action $action): void {
+        $this->deleteAction(function (DeleteAction $action): void {
             $action->using(function (Component $component, ?Model $record, $arguments): void {
                 $relationship = $component->getRelationship();
                 $record = $record ?? $relationship->getModel()::find($arguments['id']);
