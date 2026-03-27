@@ -15332,9 +15332,9 @@ html {
     margin-bottom: 30px;
   }
 }
-.slider-section-area.slider-inner .slider-images-area .img1 img {
+/* .slider-section-area.slider-inner .slider-images-area .img1 img {
   filter: brightness(0) invert(1);
-}
+} */
 
 .testimonial1-section-area .testimonial-sliders {
   border-radius: 7px;

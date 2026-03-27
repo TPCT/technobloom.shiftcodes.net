@@ -4,8 +4,7 @@
 
 @section('content')
     <div
-            class="about-header-area"
-            style="background-image: url(/images/inner-header.png); background-repeat: no-repeat; background-size: cover; background-position: center;"    >
+            class="about-header-area">
         <img
                 src="/images/elements1.png"
                 alt=""

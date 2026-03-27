@@ -133,8 +133,12 @@ body {
   background-color: #fff;
 } */
 .service1-section-area,
-.case1-section-area {
-  background: #18191b;
+.case1-section-area,
+.about-header-area,
+.works-inner-section-area .works-header-area .works-content-box,
+.skills-section-area,
+.slider-section-area.slider-inner {
+  background: #18191b !important;
 }
 
 /*  */
@@ -152,9 +156,16 @@ body {
   color: #fff !important;
 }
 .contact1-section-area .contact-boxarea,
-.contact1-section-area .contact-info-area {
+.contact1-section-area .contact-info-area,
+.bg2 {
   background-color: #18191b;
 }
 .footer1-section-area .footer-logo-area2 ul li a img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(315deg) brightness(114%) contrast(102%);
+}
+.about-header-area {
+  background-image: unset !important;
+}
+.team-boxarea span {
+  color: #fff;
 }
