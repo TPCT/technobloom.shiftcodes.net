@@ -420,10 +420,10 @@ img {
 }
 :root {
   --ztc-text-text-1: #fff;
-  --ztc-text-text-2: #090b0e;
-  --ztc-text-text-3: #3d4c5e;
+  --ztc-text-text-2: #fff;
+  --ztc-text-text-3: #fff;
   /* --ztc-text-text-4: #75cfea; */
-  --ztc-text-text-4: #75cfea;
+  --ztc-text-text-4: #B90808;
   --ztc-text-text-5: #fb3189;
   --ztc-text-text-6: #ff0a54;
   --ztc-text-text-7: #ffe7ee;
@@ -7771,7 +7771,7 @@ html {
   animation-name: fade-in-down;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  background: var(--ztc-text-text-1);
+  background: #18191b;
   transition: all 0.4s;
 }
 
@@ -13776,7 +13776,8 @@ html {
 .slider-section-area {
   position: relative;
   z-index: 1;
-  background: var(--ztc-bg-bg-4);
+  background: #18191b;
+  margin-top: 1rem;
 }
 .slider-section-area .sldier-head p {
   font-family: var(--ztc-family-font1);

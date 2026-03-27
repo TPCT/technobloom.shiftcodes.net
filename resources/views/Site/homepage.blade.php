@@ -7,11 +7,6 @@
 
     <div
             class="all-section-bg"
-            style="
-        background-image: url(/images/pages-bg1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-      "
     >
         @foreach($sections as $index => $section)
             @include('Site.homepage-sections.' . $section->slug, ['section' => $section, 'testimonials' => $testimonials, 'companies_slider' => $companies_slider])

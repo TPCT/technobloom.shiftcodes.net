@@ -1,5 +1,8 @@
 :root {
-  --second-color: #75cfea;
+  --second-color: #B90808;
+}
+body {
+  background-color: #151515;
 }
 /* Arabic Version Class */
 .arabic-version {
@@ -124,14 +127,14 @@
   }
 }
 /*  */
-.about1-section-area,
+/* .about1-section-area,
 .service2-section-area,
 .testimonial1-section-area {
   background-color: #fff;
-}
+} */
 .service1-section-area,
 .case1-section-area {
-  background: #c6edf98f;
+  background: #18191b;
 }
 
 /*  */
@@ -147,4 +150,11 @@
 .hero1-section-area .header-main-content .btn-area .header-btn2:hover {
   background-color: var(--second-color);
   color: #fff !important;
+}
+.contact1-section-area .contact-boxarea,
+.contact1-section-area .contact-info-area {
+  background-color: #18191b;
+}
+.footer1-section-area .footer-logo-area2 ul li a img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(315deg) brightness(114%) contrast(102%);
 }
