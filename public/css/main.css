@@ -423,7 +423,7 @@ img {
   --ztc-text-text-2: #fff;
   --ztc-text-text-3: #fff;
   /* --ztc-text-text-4: #75cfea; */
-  --ztc-text-text-4: #B90808;
+  --ztc-text-text-4: #7BCCDB;
   --ztc-text-text-5: #fb3189;
   --ztc-text-text-6: #ff0a54;
   --ztc-text-text-7: #ffe7ee;
@@ -7635,7 +7635,7 @@ html {
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   position: absolute;
-  background: var(--ztc-text-text-1);
+  background: #151515;
   top: 100px;
   width: 225px;
   z-index: 1;
@@ -11549,7 +11549,7 @@ html {
 .choose-section-area {
   position: relative;
   z-index: 1;
-  background: var(--ztc-text-text-2);
+  /* background: var(--ztc-text-text-2); */
 }
 .choose-section-area .cta-bg1 {
   position: absolute;
@@ -11639,7 +11639,7 @@ html {
 }
 .choose-section-area .accordian-tabs-area .accordion .accordion-item h2 button {
   box-shadow: none;
-  background: var(--ztc-text-text-1);
+  background: #151515;
   transition: all 0.4s;
   border-radius: 7px;
   color: var(--ztc-text-text-2);
@@ -12842,7 +12842,7 @@ html {
   display: flex;
   align-items: center;
   border-radius: 7px;
-  background: var(--ztc-text-text-1);
+  /* background: var(--ztc-text-text-1); */
   position: relative;
   transition: all 0.4s;
 }
@@ -13047,7 +13047,7 @@ html {
 }
 .contact-main-inner-area .contact-form-area {
   border-radius: 7px;
-  background: var(--ztc-text-text-1);
+  /* background: var(--ztc-text-text-1); */
   position: relative;
   z-index: 1;
   box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.09);
@@ -13075,7 +13075,7 @@ html {
 .contact-main-inner-area .contact-form-area .input-area input {
   border-radius: 8px;
   border: 1px solid #e6e6e6;
-  background: var(--Neutral-White, #fff);
+  /* background: var(--Neutral-White, #fff); */
   width: 100%;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
@@ -13107,7 +13107,7 @@ html {
 .contact-main-inner-area .contact-form-area .input-area textarea {
   border-radius: 8px;
   border: 1px solid #e6e6e6;
-  background: var(--Neutral-White, #fff);
+  /* background: var(--Neutral-White, #fff); */
   width: 100%;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
